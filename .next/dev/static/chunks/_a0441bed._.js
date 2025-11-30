@@ -419,7 +419,7 @@ function HeroSlider() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-primary text-sm font-medium",
+                                        className: "text-white text-sm font-medium",
                                         children: slides[currentSlide].brand
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-slider.tsx",
@@ -708,7 +708,7 @@ function AboutSection() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid sm:grid-cols-2 gap-4 mt-16 lg:mt-20",
+                                className: "grid sm:grid-cols-2 gap-4 mt-16 lg:mt-16",
                                 children: features.map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center gap-3 p-4 bg-secondary/50 rounded-xl border border-border",
                                         children: [
@@ -792,8 +792,18 @@ function AboutSection() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-muted-foreground text-lg leading-relaxed",
-                                        children: "Atlas Copco, Epiroc ve Sandvik ürün gruplarında uzmanlaşan firmamız, müşterilerine 7/24 teknik destek, hızlı tedarik ve stok yönetimi avantajı sağlamaktadır."
-                                    }, void 0, false, {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-bold",
+                                                children: "Atlas Copco, Epiroc ve Sandvik"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/about-section.tsx",
+                                                lineNumber: 78,
+                                                columnNumber: 17
+                                            }, this),
+                                            " ürün gruplarında uzmanlaşan firmamız, müşterilerine 7/24 teknik destek, hızlı tedarik ve stok yönetimi avantajı sağlamaktadır."
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/about-section.tsx",
                                         lineNumber: 77,
                                         columnNumber: 15
@@ -1380,6 +1390,14 @@ function ContactSection() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/contact-section.tsx",
                                         lineNumber: 161,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs text-muted-foreground/70 mt-3 leading-relaxed",
+                                        children: "Formu göndererek kişisel verilerinizin işlenmesini kabul etmiş olursunuz. Bilgileriniz yalnızca talebinize yanıt vermek amacıyla kullanılacak ve üçüncü şahıslarla paylaşılmayacaktır."
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/contact-section.tsx",
+                                        lineNumber: 168,
                                         columnNumber: 15
                                     }, this)
                                 ]

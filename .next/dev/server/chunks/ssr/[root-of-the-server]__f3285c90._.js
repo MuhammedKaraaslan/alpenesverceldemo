@@ -452,6 +452,53 @@ function WhatsAppIcon({ className, ...props }) {
     }, this);
 }
 }),
+"[project]/lib/site-config.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "siteConfig",
+    ()=>siteConfig
+]);
+const siteConfig = {
+    name: "AlpEnes",
+    description: "Endüstriyel kaya delme ekipmanları ve madencilik çözümlerinde güvenilir iş ortağınız.",
+    contact: {
+        phone: "+90 555 123 45 67",
+        phoneLink: "tel:+905551234567",
+        email: "mhmmdkaraaslan@gmail.com",
+        addresses: [
+            "Ankara Sanayi Bölgesi",
+            "Kayseri Sanayi Bölgesi"
+        ],
+        whatsapp: "https://wa.me/905551234567"
+    },
+    navItems: [
+        {
+            label: "Ana Sayfa",
+            href: "/"
+        },
+        {
+            label: "Ürünler",
+            href: "#urunler"
+        },
+        {
+            label: "Hakkımızda",
+            href: "#hakkimizda"
+        },
+        {
+            label: "İletişim",
+            href: "#iletisim"
+        }
+    ],
+    buttons: {
+        getQuote: "Teklif Al",
+        reviewProducts: "Ürünleri İncele",
+        aboutUs: "Hakkımızda",
+        support: "7/24 Destek",
+        requestQuote: "İletişime Geç"
+    }
+};
+}),
 "[project]/components/guarantee-section.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -464,6 +511,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-rsc] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/icons.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/site-config.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -559,39 +608,57 @@ function GuaranteeSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-col sm:flex-row gap-4",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                        className: "bg-primary text-primary-foreground hover:bg-primary/90 px-8",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                className: "w-4 h-4"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/guarantee-section.tsx",
-                                                lineNumber: 44,
-                                                columnNumber: 17
-                                            }, this),
-                                            "İletişime Geç"
-                                        ]
-                                    }, void 0, true, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#iletisim",
+                                        className: "cursor-pointer",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                            className: "bg-primary text-primary-foreground hover:bg-primary/90 px-8 cursor-pointer w-full sm:w-auto",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/guarantee-section.tsx",
+                                                    lineNumber: 45,
+                                                    columnNumber: 19
+                                                }, this),
+                                                "İletişime Geç"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/guarantee-section.tsx",
+                                            lineNumber: 44,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
                                         lineNumber: 43,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                        variant: "outline",
-                                        className: "border-green-600 text-green-500 hover:bg-green-600 hover:text-white px-8 bg-transparent",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WhatsAppIcon"], {
-                                                className: "w-4 h-4"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/guarantee-section.tsx",
-                                                lineNumber: 51,
-                                                columnNumber: 17
-                                            }, this),
-                                            "WhatsApp Destek"
-                                        ]
-                                    }, void 0, true, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["siteConfig"].contact.whatsapp,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "cursor-pointer",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                            variant: "outline",
+                                            className: "border-green-600 text-green-500 hover:bg-green-600 hover:text-white px-8 bg-transparent cursor-pointer w-full sm:w-auto",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WhatsAppIcon"], {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/guarantee-section.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 19
+                                                }, this),
+                                                "WhatsApp Destek"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/guarantee-section.tsx",
+                                            lineNumber: 55,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -617,7 +684,7 @@ function GuaranteeSection() {
                                         children: "25+"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -625,13 +692,13 @@ function GuaranteeSection() {
                                         children: "Yıllık Deneyim"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/guarantee-section.tsx",
-                                lineNumber: 59,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -642,7 +709,7 @@ function GuaranteeSection() {
                                         children: "10K+"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -650,13 +717,13 @@ function GuaranteeSection() {
                                         children: "Stok Ürün"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/guarantee-section.tsx",
-                                lineNumber: 63,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -667,7 +734,7 @@ function GuaranteeSection() {
                                         children: "7/24"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -675,13 +742,13 @@ function GuaranteeSection() {
                                         children: "Hizmet"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/guarantee-section.tsx",
-                                lineNumber: 67,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -692,7 +759,7 @@ function GuaranteeSection() {
                                         children: "500+"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -700,19 +767,19 @@ function GuaranteeSection() {
                                         children: "Mutlu Müşteri"
                                     }, void 0, false, {
                                         fileName: "[project]/components/guarantee-section.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/guarantee-section.tsx",
-                                lineNumber: 71,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/guarantee-section.tsx",
-                        lineNumber: 58,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this)
                 ]
@@ -768,53 +835,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$contact$2d$sec
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$contact$2d$section$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/components/contact-section.tsx [app-rsc] (client reference proxy)");
 ;
 __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$contact$2d$section$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
-}),
-"[project]/lib/site-config.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "siteConfig",
-    ()=>siteConfig
-]);
-const siteConfig = {
-    name: "AlpEnes",
-    description: "Endüstriyel kaya delme ekipmanları ve madencilik çözümlerinde güvenilir iş ortağınız.",
-    contact: {
-        phone: "+90 555 123 45 67",
-        phoneLink: "tel:+905551234567",
-        email: "mhmmdkaraaslan@gmail.com",
-        addresses: [
-            "Ankara Sanayi Bölgesi",
-            "Kayseri Sanayi Bölgesi"
-        ],
-        whatsapp: "https://wa.me/905551234567"
-    },
-    navItems: [
-        {
-            label: "Ana Sayfa",
-            href: "/"
-        },
-        {
-            label: "Ürünler",
-            href: "#urunler"
-        },
-        {
-            label: "Hakkımızda",
-            href: "#hakkimizda"
-        },
-        {
-            label: "İletişim",
-            href: "#iletisim"
-        }
-    ],
-    buttons: {
-        getQuote: "Teklif Al",
-        reviewProducts: "Ürünleri İncele",
-        aboutUs: "Hakkımızda",
-        support: "7/24 Destek",
-        requestQuote: "İletişime Geç"
-    }
-};
 }),
 "[project]/components/footer.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -1260,4 +1280,4 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/page.tsx [app-rsc
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__35352723._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__f3285c90._.js.map

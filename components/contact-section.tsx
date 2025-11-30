@@ -165,6 +165,11 @@ export function ContactSection() {
               >
                 {loading ? "Gönderiliyor..." : siteConfig.buttons.requestQuote}
               </Button>
+              <p className="text-xs text-muted-foreground/70 mt-3 leading-relaxed">
+                Formu göndererek kişisel verilerinizin işlenmesini kabul etmiş olursunuz.
+                Bilgileriniz yalnızca talebinize yanıt vermek amacıyla kullanılacak ve üçüncü
+                şahıslarla paylaşılmayacaktır.
+              </p>
             </form>
           </div>
         </div>

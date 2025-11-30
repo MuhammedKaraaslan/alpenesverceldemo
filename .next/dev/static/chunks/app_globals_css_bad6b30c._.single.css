@@ -679,8 +679,16 @@
     margin-top: calc(var(--spacing) * 2);
   }
 
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
+  }
+
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
 
   .mt-12 {
@@ -2277,6 +2285,16 @@
     color: var(--muted-foreground);
   }
 
+  .text-muted-foreground\/70 {
+    color: var(--muted-foreground);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-muted-foreground\/70 {
+      color: color-mix(in oklab, var(--muted-foreground) 70%, transparent);
+    }
+  }
+
   .text-popover-foreground {
     color: var(--popover-foreground);
   }
@@ -3012,6 +3030,12 @@
   .last\:border-b-0:last-child {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 0;
+  }
+
+  @media (hover: hover) {
+    .hover\:gap-2:hover {
+      gap: calc(var(--spacing) * 2);
+    }
   }
 
   @media (hover: hover) {
@@ -4479,12 +4503,6 @@
   }
 
   @media (min-width: 40rem) {
-    .sm\:inline-flex {
-      display: inline-flex;
-    }
-  }
-
-  @media (min-width: 40rem) {
     .sm\:w-auto {
       width: auto;
     }
@@ -4770,6 +4788,12 @@
   @media (min-width: 64rem) {
     .lg\:col-span-1 {
       grid-column: span 1 / span 1;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:mt-16 {
+      margin-top: calc(var(--spacing) * 16);
     }
   }
 

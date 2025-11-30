@@ -64,7 +64,7 @@ export function HeroSlider() {
             {/* Brand Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-primary text-sm font-medium">{slides[currentSlide].brand}</span>
+              <span className="text-white text-sm font-medium">{slides[currentSlide].brand}</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">

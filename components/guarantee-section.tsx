@@ -1,6 +1,7 @@
 import { Check, Phone } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons"
 import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/lib/site-config"
 
 const guarantees = [
   "25 yılı aşkın sektör tecrübesi",
@@ -16,12 +17,12 @@ export function GuaranteeSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content Side */}
           <div>
-            <span className="text-primary text-sm font-semibold tracking-wider uppercase">Alpfenix Güvencesi</span>
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase">AlpEnes Güvencesi</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
               <span className="text-primary">25+ Yıllık</span> Sektör Deneyimi ile
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Alpfenix olarak, endüstriyel ekipman alanındaki deneyimimizle işletmelerinizin tüm süreçlerine güvenilir
+              AlpEnes olarak, endüstriyel ekipman alanındaki deneyimimizle işletmelerinizin tüm süreçlerine güvenilir
               destek sağlıyoruz.
             </p>
 
@@ -39,17 +40,26 @@ export function GuaranteeSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8">
-                <Phone className="w-4 h-4 mr-2" />
-                İletişime Geç
-              </Button>
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-500 hover:bg-green-600 hover:text-white px-8 bg-transparent"
+              <a href="#iletisim" className="cursor-pointer">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 cursor-pointer w-full sm:w-auto">
+                  <Phone className="w-4 h-4" />
+                  İletişime Geç
+                </Button>
+              </a>
+              <a
+                href={siteConfig.contact.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
               >
-                <WhatsAppIcon className="w-4 h-4 mr-2" />
-                WhatsApp Destek
-              </Button>
+                <Button
+                  variant="outline"
+                  className="border-green-600 text-green-500 hover:bg-green-600 hover:text-white px-8 bg-transparent cursor-pointer w-full sm:w-auto"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  WhatsApp Destek
+                </Button>
+              </a>
             </div>
           </div>
 

@@ -47,7 +47,7 @@ export function AboutSection() {
             </div>
 
             {/* Features Grid - Moved here */}
-            <div className="grid sm:grid-cols-2 gap-4 mt-16 lg:mt-20">
+            <div className="grid sm:grid-cols-2 gap-4 mt-16 lg:mt-16">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -75,7 +75,7 @@ export function AboutSection() {
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Atlas Copco, Epiroc ve Sandvik ürün gruplarında uzmanlaşan firmamız, müşterilerine 7/24 teknik destek, hızlı tedarik ve stok yönetimi avantajı sağlamaktadır.
+                <span className="font-bold">Atlas Copco, Epiroc ve Sandvik</span> ürün gruplarında uzmanlaşan firmamız, müşterilerine 7/24 teknik destek, hızlı tedarik ve stok yönetimi avantajı sağlamaktadır.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
