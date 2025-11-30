@@ -125,6 +125,9 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -176,9 +179,6 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
       --tw-content: "";
       --tw-animation-delay: 0s;
       --tw-animation-direction: normal;
@@ -1057,6 +1057,10 @@
     height: calc(var(--spacing) * 16);
   }
 
+  .h-\[1\.2rem\] {
+    height: 1.2rem;
+  }
+
   .h-\[1\.15rem\] {
     height: 1.15rem;
   }
@@ -1203,6 +1207,10 @@
 
   .w-72 {
     width: calc(var(--spacing) * 72);
+  }
+
+  .w-\[1\.2rem\] {
+    width: 1.2rem;
   }
 
   .w-\[100px\] {
@@ -1391,6 +1399,24 @@
   .translate-y-\[calc\(-50\%_-_2px\)\] {
     --tw-translate-y: calc(-50% - 2px);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .scale-0 {
+    --tw-scale-x: 0%;
+    --tw-scale-y: 0%;
+    --tw-scale-z: 0%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .scale-100 {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .rotate-0 {
+    rotate: none;
   }
 
   .rotate-45 {
@@ -4829,12 +4855,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:gap-0 {
-      gap: calc(var(--spacing) * 0);
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:gap-1\.5 {
       gap: calc(var(--spacing) * 1.5);
     }
@@ -5059,6 +5079,28 @@
     .\@md\/field-group\:has-\[\>\[data-slot\=field-content\]\]\:items-start:has( > [data-slot="field-content"]) {
       align-items: flex-start;
     }
+  }
+
+  .dark\:scale-0:is(.dark *) {
+    --tw-scale-x: 0%;
+    --tw-scale-y: 0%;
+    --tw-scale-z: 0%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .dark\:scale-100:is(.dark *) {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .dark\:-rotate-90:is(.dark *) {
+    rotate: -90deg;
+  }
+
+  .dark\:rotate-0:is(.dark *) {
+    rotate: none;
   }
 
   .dark\:border-input:is(.dark *) {
@@ -5905,6 +5947,79 @@
 }
 
 :root {
+  --background: #f8f8f8;
+  --foreground: #050c13;
+  --card: #fff;
+  --card-foreground: #050c13;
+  --popover: #fff;
+  --popover-foreground: #050c13;
+  --primary: #0074c9;
+  --primary-foreground: #f8f8f8;
+  --secondary: #eaeff5;
+  --secondary-foreground: #050c13;
+  --muted: #eaeff5;
+  --muted-foreground: #4d5660;
+  --accent: #d9e7f1;
+  --accent-foreground: #050c13;
+  --destructive: #e40014;
+  --destructive-foreground: #f8f8f8;
+  --border: #d3d8de;
+  --input: #d3d8de;
+  --ring: #0074c9;
+  --chart-1: #0074c9;
+  --chart-2: #006aa5;
+  --chart-3: #005991;
+  --chart-4: #124a7b;
+  --chart-5: #329acd;
+  --radius: .5rem;
+  --sidebar: #f8f8f8;
+  --sidebar-foreground: #050c13;
+  --sidebar-primary: #0074c9;
+  --sidebar-primary-foreground: #f8f8f8;
+  --sidebar-accent: #eaeff5;
+  --sidebar-accent-foreground: #050c13;
+  --sidebar-border: #d3d8de;
+  --sidebar-ring: #0074c9;
+}
+
+@supports (color: lab(0% 0 0)) {
+  :root {
+    --background: lab(97.68% -.0000298023 .0000119209);
+    --foreground: lab(3.01922% -.727452 -4.46609);
+    --card: lab(100% 0 0);
+    --card-foreground: lab(3.01922% -.727452 -4.46609);
+    --popover: lab(100% 0 0);
+    --popover-foreground: lab(3.01922% -.727452 -4.46609);
+    --primary: lab(46.6457% -.178784 -60.0399);
+    --primary-foreground: lab(97.68% -.0000298023 .0000119209);
+    --secondary: lab(94.1916% -1.09133 -3.56996);
+    --secondary-foreground: lab(3.01922% -.727452 -4.46609);
+    --muted: lab(94.1916% -1.09133 -3.56996);
+    --muted-foreground: lab(36.1728% -1.98329 -7.04196);
+    --accent: lab(90.7483% -3.20742 -6.5629);
+    --accent-foreground: lab(3.01922% -.727452 -4.46609);
+    --destructive: lab(48.4493% 77.4328 61.5452);
+    --destructive-foreground: lab(97.68% -.0000298023 .0000119209);
+    --border: lab(86.0715% -1.08898 -3.56863);
+    --input: lab(86.0715% -1.08898 -3.56863);
+    --ring: lab(46.6457% -.178784 -60.0399);
+    --chart-1: lab(46.6457% -.178784 -60.0399);
+    --chart-2: lab(41.6089% -11.08 -46.2817);
+    --chart-3: lab(35.7602% -6.53733 -38.8476);
+    --chart-4: lab(29.9106% -3.00425 -33.6042);
+    --chart-5: lab(59.4755% -17.1107 -35.6565);
+    --sidebar: lab(97.68% -.0000298023 .0000119209);
+    --sidebar-foreground: lab(3.01922% -.727452 -4.46609);
+    --sidebar-primary: lab(46.6457% -.178784 -60.0399);
+    --sidebar-primary-foreground: lab(97.68% -.0000298023 .0000119209);
+    --sidebar-accent: lab(94.1916% -1.09133 -3.56996);
+    --sidebar-accent-foreground: lab(3.01922% -.727452 -4.46609);
+    --sidebar-border: lab(86.0715% -1.08898 -3.56863);
+    --sidebar-ring: lab(46.6457% -.178784 -60.0399);
+  }
+}
+
+.dark {
   --background: #02060d;
   --foreground: #f8f8f8;
   --card: #070e16;
@@ -5929,7 +6044,6 @@
   --chart-3: #0f68a2;
   --chart-4: #23588a;
   --chart-5: #45aade;
-  --radius: .5rem;
   --sidebar: #040a11;
   --sidebar-foreground: #f8f8f8;
   --sidebar-primary: #0083e3;
@@ -5941,7 +6055,7 @@
 }
 
 @supports (color: lab(0% 0 0)) {
-  :root {
+  .dark {
     --background: lab(1.53827% -.389941 -2.97685);
     --foreground: lab(97.68% -.0000298023 .0000119209);
     --card: lab(3.66811% -.860922 -5.02954);
@@ -5993,6 +6107,24 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 
 @property --tw-rotate-x {
@@ -6267,24 +6399,6 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false
-}
-
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
 }
 
 @property --tw-content {

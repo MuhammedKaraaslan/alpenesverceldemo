@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, Phone } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 import { siteConfig } from "@/lib/site-config"
 
@@ -53,6 +54,7 @@ export function Header() {
               <WhatsAppIcon className="w-4 h-4" />
               <span>{siteConfig.buttons.support}</span>
             </a>
+            <ThemeToggle />
             <Link href="#iletisim">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">{siteConfig.buttons.getQuote}</Button>
             </Link>
@@ -82,8 +84,12 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <div className="flex items-center justify-between mt-2 gap-4">
+                <span className="text-sm text-muted-foreground">Tema:</span>
+                <ThemeToggle />
+              </div>
               <Link href="#iletisim" onClick={() => setIsMenuOpen(false)}>
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 mt-2 w-full">{siteConfig.buttons.getQuote}</Button>
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">{siteConfig.buttons.getQuote}</Button>
               </Link>
             </div>
           </nav>

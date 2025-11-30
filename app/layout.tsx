@@ -6,6 +6,7 @@ import "./globals.css"
 
 import { Toaster } from "@/components/ui/sonner"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -24,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr">
+    <html lang="tr" suppressHydrationWarning>
       <body className={`font-sans antialiased`} suppressHydrationWarning>
-        {children}
-        <Toaster />
-        <Analytics />
-        <WhatsAppButton />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          {children}
+          <Toaster />
+          <Analytics />
+          <WhatsAppButton />
+        </ThemeProvider>
       </body>
     </html>
   )
