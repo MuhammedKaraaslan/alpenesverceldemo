@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/03c53205d29f1c56.css","style"]
+:HL["/_next/static/chunks/118ad538ffafd4f4.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/rock-drilling-machine-heavy-industrial-equipment-m.jpg","image"]
+:HL["/mining-blasting-equipment-industrial-explosive-too.jpg","image"]
+:HL["/industrial-spare-parts-machinery-components-gears.jpg","image"]
+:HL["/industrial-mining-team-technicians-equipment-profe.jpg","image"]
+0:{"buildId":"aPuraUKY9DHbto-dJRSi7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
