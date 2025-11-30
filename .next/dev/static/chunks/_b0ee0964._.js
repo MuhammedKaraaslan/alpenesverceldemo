@@ -150,7 +150,7 @@ function WhatsAppButton() {
         href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].contact.whatsapp,
         target: "_blank",
         rel: "noopener noreferrer",
-        className: "fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center hover:gap-2 bg-[#25D366] shadow-lg transition-all duration-300 p-4 sm:bottom-6 sm:left-6 sm:right-auto sm:w-auto sm:justify-start sm:rounded-full sm:p-3 sm:hover:pr-6 sm:hover:pl-2 group",
+        className: "fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center gap-2 lg:gap-0 hover:gap-2 bg-[#25D366] shadow-lg transition-all duration-300 p-4 sm:bottom-6 sm:left-6 sm:right-auto sm:w-auto sm:justify-start sm:rounded-full sm:p-3 sm:hover:pr-6 sm:hover:pl-2 group",
         "aria-label": "WhatsApp ile iletişime geçin",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
