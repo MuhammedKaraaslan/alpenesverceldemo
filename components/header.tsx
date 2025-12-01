@@ -54,20 +54,23 @@ export function Header() {
               <WhatsAppIcon className="w-4 h-4" />
               <span>{siteConfig.buttons.support}</span>
             </a>
-            <ThemeToggle />
             <Link href="#iletisim">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">{siteConfig.buttons.getQuote}</Button>
             </Link>
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-foreground"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Controls */}
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -84,10 +87,6 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="flex items-center justify-between mt-2 gap-4">
-                <span className="text-sm text-muted-foreground">Tema:</span>
-                <ThemeToggle />
-              </div>
               <Link href="#iletisim" onClick={() => setIsMenuOpen(false)}>
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">{siteConfig.buttons.getQuote}</Button>
               </Link>
