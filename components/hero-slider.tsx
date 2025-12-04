@@ -73,7 +73,7 @@ export function HeroSlider() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-start pt-28 sm:pt-0 sm:items-center">
+      <div className="relative z-10 h-full flex items-start pt-24 sm:pt-0 sm:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
             {/* Brand Badges */}
@@ -114,7 +114,7 @@ export function HeroSlider() {
       </div>
 
       {/* Slider Controls */}
-      <div className="absolute bottom-32 md:bottom-8 left-0 right-0 z-20">
+      <div className="absolute bottom-24 md:bottom-8 left-0 right-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Dots */}
