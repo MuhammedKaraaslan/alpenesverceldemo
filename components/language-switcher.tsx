@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/lib/language-context"
 import { Button } from "@/components/ui/button"
-import { Languages } from "lucide-react"
+import { Globe2 } from "lucide-react"
 
 export function LanguageSwitcher() {
     const { language, setLanguage } = useLanguage()
@@ -14,14 +14,17 @@ export function LanguageSwitcher() {
     return (
         <Button
             variant="ghost"
-            size="icon"
             onClick={toggleLanguage}
-            className="relative h-9 w-9"
+            className="relative flex items-center gap-2 h-10 px-3 min-w-[90px] justify-center bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 hover:border-primary/30 rounded-full transition-all duration-300 group"
             aria-label="Toggle language"
         >
-            <Languages className="h-4 w-4" />
-            <span className="absolute -bottom-1 -right-1 text-[10px] font-bold uppercase bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center">
-                {language}
+            <Globe2
+                size={24}
+                className="text-primary group-hover:rotate-12 transition-transform duration-300"
+                style={{ width: '24px', height: '24px', minWidth: '24px', minHeight: '24px' }}
+            />
+            <span className="text-sm font-semibold uppercase text-primary transition-all duration-300">
+                {language === 'tr' ? 'EN' : 'TR'}
             </span>
         </Button>
     )
