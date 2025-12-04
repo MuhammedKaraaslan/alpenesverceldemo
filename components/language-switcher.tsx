@@ -25,7 +25,7 @@ export function LanguageSwitcher() {
     const currentLanguage = languages.find(lang => lang.code === language) || languages[0]
 
     return (
-        <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+        <DropdownMenu modal={false} open={isOpen} onOpenChange={setIsOpen}>
             <DropdownMenuTrigger asChild>
                 <Button
                     variant="ghost"
