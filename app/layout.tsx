@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   description:
     "Atlas Copco, Epiroc ve Sandvik ürün gruplarında hızlı tedarik, geniş stok ve uzman destek. Madencilik ve inşaat sektörlerine profesyonel çözümler.",
   keywords: "kaya delme, madencilik ekipmanları, patlatma ekipmanları, Atlas Copco, Epiroc, Sandvik, yedek parça",
-  generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+  }
 }
 
 export default function RootLayout({
