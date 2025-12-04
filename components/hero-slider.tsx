@@ -73,7 +73,7 @@ export function HeroSlider() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-start pt-32 sm:pt-0 sm:items-center">
+      <div className="relative z-10 h-full flex items-start pt-28 sm:pt-0 sm:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
             {/* Brand Badges */}
