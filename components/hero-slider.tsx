@@ -11,17 +11,32 @@ const slides = [
   {
     id: 1,
     brand: "Atlas Copco",
-    image: "/atlas-copco-industrial-rock-drilling-equipment-min.jpg",
+    image: "/slide-1.jpg",
   },
   {
     id: 2,
     brand: "Epiroc",
-    image: "/epiroc-underground-mining-drilling-equipment-machi.jpg",
+    image: "/slide-2.jpg",
   },
   {
     id: 3,
     brand: "Sandvik",
-    image: "/sandvik-mining-rock-drilling-heavy-equipment-machi.jpg",
+    image: "/slide-3.jpg",
+  },
+  {
+    id: 4,
+    brand: "Sandvik",
+    image: "/slide-4.jpg",
+  },
+  {
+    id: 5,
+    brand: "Sandvik",
+    image: "/slide-5.jpg",
+  },
+  {
+    id: 6,
+    brand: "Sandvik",
+    image: "/slide-6.png",
   },
 ]
 
@@ -62,10 +77,10 @@ export function HeroSlider() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
             {/* Brand Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
+            {/*<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-white text-sm font-medium">{slides[currentSlide].brand}</span>
-            </div>
+            </div>*/}
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
               Endüstriyel Kaya Delme Ekipmanlarında <span className="text-primary">Güvenilir Çözüm Ortağınız</span>

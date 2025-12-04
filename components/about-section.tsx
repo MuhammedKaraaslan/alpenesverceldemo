@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 const features = [
   {
     icon: Truck,
-    text: "Saha uyumlu hızlı tedarik",
+    text: "Saha uyumlu hızlı tedarik ve zamanında teslimat",
   },
   {
     icon: Users,

@@ -469,17 +469,32 @@ const slides = [
     {
         id: 1,
         brand: "Atlas Copco",
-        image: "/atlas-copco-industrial-rock-drilling-equipment-min.jpg"
+        image: "/slide-1.jpg"
     },
     {
         id: 2,
         brand: "Epiroc",
-        image: "/epiroc-underground-mining-drilling-equipment-machi.jpg"
+        image: "/slide-2.jpg"
     },
     {
         id: 3,
         brand: "Sandvik",
-        image: "/sandvik-mining-rock-drilling-heavy-equipment-machi.jpg"
+        image: "/slide-3.jpg"
+    },
+    {
+        id: 4,
+        brand: "Sandvik",
+        image: "/slide-4.jpg"
+    },
+    {
+        id: 5,
+        brand: "Sandvik",
+        image: "/slide-5.jpg"
+    },
+    {
+        id: 6,
+        brand: "Sandvik",
+        image: "/slide-6.png"
     }
 ];
 function HeroSlider() {
@@ -518,20 +533,20 @@ function HeroSlider() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/hero-slider.tsx",
-                            lineNumber: 55,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute inset-0 bg-background/80"
                         }, void 0, false, {
                             fileName: "[project]/components/hero-slider.tsx",
-                            lineNumber: 56,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, slide.id, true, {
                     fileName: "[project]/components/hero-slider.tsx",
-                    lineNumber: 50,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -541,30 +556,6 @@ function HeroSlider() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "max-w-3xl",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "w-2 h-2 bg-primary rounded-full animate-pulse"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 66,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-white text-sm font-medium",
-                                        children: slides[currentSlide].brand
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 67,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 65,
-                                columnNumber: 13
-                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance",
                                 children: [
@@ -574,13 +565,13 @@ function HeroSlider() {
                                         children: "Güvenilir Çözüm Ortağınız"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 86,
                                         columnNumber: 53
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 70,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -588,7 +579,7 @@ function HeroSlider() {
                                 children: "Atlas Copco, Epiroc ve Sandvik ürün gruplarında hızlı tedarik, geniş stok ve uzman destek."
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 74,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -604,40 +595,40 @@ function HeroSlider() {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/hero-slider.tsx",
-                                                lineNumber: 88,
+                                                lineNumber: 103,
                                                 columnNumber: 19
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].buttons.getQuote
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 98,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/hero-slider.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 97,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 78,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-slider.tsx",
-                        lineNumber: 63,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/hero-slider.tsx",
-                    lineNumber: 62,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/hero-slider.tsx",
-                lineNumber: 61,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -655,12 +646,12 @@ function HeroSlider() {
                                         "aria-label": `Go to slide ${index + 1}`
                                     }, index, false, {
                                         fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 119,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 102,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -674,12 +665,12 @@ function HeroSlider() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero-slider.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -690,40 +681,40 @@ function HeroSlider() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/hero-slider.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 145,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-slider.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero-slider.tsx",
-                                lineNumber: 117,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-slider.tsx",
-                        lineNumber: 100,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/hero-slider.tsx",
-                    lineNumber: 99,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/hero-slider.tsx",
-                lineNumber: 98,
+                lineNumber: 113,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/hero-slider.tsx",
-        lineNumber: 47,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }
@@ -762,7 +753,7 @@ var _s = __turbopack_context__.k.signature();
 const features = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__["Truck"],
-        text: "Saha uyumlu hızlı tedarik"
+        text: "Saha uyumlu hızlı tedarik ve zamanında teslimat"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
@@ -1192,7 +1183,7 @@ function ContactSection() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-foreground font-semibold",
-                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].contact.phone
+                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].contact.whatsappPhone
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/contact-section.tsx",
                                                         lineNumber: 71,

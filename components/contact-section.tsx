@@ -68,7 +68,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="text-muted-foreground text-sm">WhatsApp</div>
-                  <div className="text-foreground font-semibold">{siteConfig.contact.phone}</div>
+                  <div className="text-foreground font-semibold">{siteConfig.contact.whatsappPhone}</div>
                 </div>
               </a>
 

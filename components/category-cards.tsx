@@ -8,7 +8,7 @@ const categories = [
     title: "Kaya Delme Makineleri",
     description: "Kaya delme ve yer altı madenciliği için yüksek performanslı ekipmanlar.",
     icon: Drill,
-    image: "/rock-drilling-machine-heavy-industrial-equipment-m.jpg",
+    image: "/kaya-delme.jpg",
     buttonText: "İletişime Geç",
   },
   {
@@ -24,7 +24,7 @@ const categories = [
     title: "Yedek Parçalar",
     description: "10.000'den fazla stoklu ürün seçeneği ile hızlı çözümler.",
     icon: Cog,
-    image: "/industrial-spare-parts-machinery-components-gears.jpg",
+    image: "/yedek-parca.jpg",
     buttonText: "İletişime Geç",
   },
 ]

@@ -179,7 +179,7 @@ const categories = [
         title: "Kaya Delme Makineleri",
         description: "Kaya delme ve yer altı madenciliği için yüksek performanslı ekipmanlar.",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$drill$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Drill$3e$__["Drill"],
-        image: "/rock-drilling-machine-heavy-industrial-equipment-m.jpg",
+        image: "/kaya-delme.jpg",
         buttonText: "İletişime Geç"
     },
     {
@@ -195,7 +195,7 @@ const categories = [
         title: "Yedek Parçalar",
         description: "10.000'den fazla stoklu ürün seçeneği ile hızlı çözümler.",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cog$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Cog$3e$__["Cog"],
-        image: "/industrial-spare-parts-machinery-components-gears.jpg",
+        image: "/yedek-parca.jpg",
         buttonText: "İletişime Geç"
     }
 ];
@@ -463,14 +463,15 @@ const siteConfig = {
     name: "AlpEnes",
     description: "Endüstriyel kaya delme ekipmanları ve madencilik çözümlerinde güvenilir iş ortağınız.",
     contact: {
-        phone: "+90 555 123 45 67",
-        phoneLink: "tel:+905551234567",
-        email: "mhmmdkaraaslan@gmail.com",
+        phone: "+90 533 737 51 91",
+        phoneLink: "tel:+905337375191",
+        whatsappPhone: "+90 533 735 51 91",
+        email: "info@alpenes.com",
         addresses: [
             "Ankara Sanayi Bölgesi",
             "Kayseri Sanayi Bölgesi"
         ],
-        whatsapp: "https://wa.me/905551234567"
+        whatsapp: "https://wa.me/905337355191"
     },
     navItems: [
         {
