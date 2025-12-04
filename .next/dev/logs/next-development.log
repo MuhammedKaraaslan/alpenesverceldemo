@@ -1,107 +1,13 @@
-[00:00:01.714] Server  LOG      ✓ Ready in 870ms
-[00:00:07.011] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.011] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:07.011] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764857398308}
-[00:01:57.773] Server  LOG      ✓ Compiled in 255ms
-[00:01:57.888] Browser ERROR   ./lib/site-config.ts:17:5
-Parsing ecmascript source code failed
-  15 |         { label: "İletişim", href: "#iletisim" },
-  16 |     ],
-> 17 |     buttons: {
-     |     ^^^^^^^^^^
-> 18 |         getQuote: "Teklif Al",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 19 |         reviewProducts: "Ürünleri İncele",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 20 |         aboutUs: "Hakkımızda",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 21 |         support: "7/24 Destek",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 22 |         requestQuote: "İletişime Geç",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 23 |     },
-     | ^^^^^^
-  24 | }
-  25 |
-
-'const' declarations must be initialized
-
-Import traces:
-  #1 [Server Component]:
-    ./lib/site-config.ts
-    ./components/footer.tsx
-    ./app/page.tsx
-
-  #2 [Client Component Browser]:
-    ./lib/site-config.ts [Client Component Browser]
-    ./components/contact-section.tsx [Client Component Browser]
-    ./components/contact-section.tsx [Server Component]
-    ./app/page.tsx [Server Component]
-
-  #3 [Client Component Browser]:
-    ./lib/site-config.ts [Client Component Browser]
-    ./components/whatsapp-button.tsx [Client Component Browser]
-    ./components/whatsapp-button.tsx [Server Component]
-    ./app/layout.tsx [Server Component]
-
-  #4 [Client Component SSR]:
-    ./lib/site-config.ts [Client Component SSR]
-    ./components/contact-section.tsx [Client Component SSR]
-    ./components/contact-section.tsx [Server Component]
-    ./app/page.tsx [Server Component]
-
-  #5 [Client Component SSR]:
-    ./lib/site-config.ts [Client Component SSR]
-    ./components/whatsapp-button.tsx [Client Component SSR]
-    ./components/whatsapp-button.tsx [Server Component]
-    ./app/layout.tsx [Server Component]
-[00:02:15.298] Server  LOG      ✓ Compiled in 118ms
-[00:02:15.400] Browser ERROR   ./lib/site-config.ts:3:23
-Parsing ecmascript source code failed
-  1 | buttons: {
-  2 |     getQuote: "Teklif Al",
-> 3 |         reviewProducts: "Ürünleri İncele",
-    |                       ^
-  4 |             aboutUs: "Hakkımızda",
-  5 |                 support: "7/24 Destek",
-  6 |                     requestQuote: "İletişime Geç",
-
-Expected ';', '}' or <eof>
-
-Import traces:
-  #1 [Server Component]:
-    ./lib/site-config.ts
-    ./components/footer.tsx
-    ./app/page.tsx
-
-  #2 [Client Component Browser]:
-    ./lib/site-config.ts [Client Component Browser]
-    ./components/contact-section.tsx [Client Component Browser]
-    ./components/contact-section.tsx [Server Component]
-    ./app/page.tsx [Server Component]
-
-  #3 [Client Component Browser]:
-    ./lib/site-config.ts [Client Component Browser]
-    ./components/whatsapp-button.tsx [Client Component Browser]
-    ./components/whatsapp-button.tsx [Server Component]
-    ./app/layout.tsx [Server Component]
-
-  #4 [Client Component SSR]:
-    ./lib/site-config.ts [Client Component SSR]
-    ./components/contact-section.tsx [Client Component SSR]
-    ./components/contact-section.tsx [Server Component]
-    ./app/page.tsx [Server Component]
-
-  #5 [Client Component SSR]:
-    ./lib/site-config.ts [Client Component SSR]
-    ./components/whatsapp-button.tsx [Client Component SSR]
-    ./components/whatsapp-button.tsx [Server Component]
-    ./app/layout.tsx [Server Component]
-[00:03:06.230] Server  LOG      ✓ Compiled in 173ms
-[00:04:06.597] Server  LOG      ✓ Compiled in 109ms
-[00:05:39.725] Server  LOG      ✓ Compiled in 77ms
-[00:09:03.412] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:09:03.412] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:09:03.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764857934709}
-[00:16:29.162] Server  LOG      ✓ Compiled in 112ms
-[00:16:38.162] Server  LOG      ✓ Compiled in 76ms
+[00:00:01.318] Server  LOG      ✓ Ready in 823ms
+[00:00:06.077] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.077] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.077] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764858986488}
+[00:00:09.606] Server  LOG      ✓ Compiled in 118ms
+[00:00:18.437] Server  LOG      ✓ Compiled in 179ms
+[00:00:26.768] Server  LOG      ✓ Compiled in 99ms
+[00:01:40.363] Server  LOG      ✓ Compiled in 157ms
+[00:02:27.953] Server  LOG      ✓ Compiled in 123ms
+[00:04:31.785] Server  LOG      ✓ Compiled in 274ms
+[00:05:46.431] Server  LOG      ✓ Compiled in 126ms
+[00:05:50.649] Server  LOG      ✓ Compiled in 91ms
+[00:07:17.705] Server  LOG      ✓ Compiled in 200ms

@@ -73,14 +73,18 @@ export function HeroSlider() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
+      <div className="relative z-10 h-full flex items-start pt-32 sm:pt-0 sm:items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
-            {/* Brand Badge */}
-            {/*<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-white text-sm font-medium">{slides[currentSlide].brand}</span>
-            </div>*/}
+            {/* Brand Badges */}
+            <div className="flex flex-wrap gap-3 mb-6">
+              {["Atlas Copco", "Epiroc", "Sandvik"].map((brand) => (
+                <div key={brand} className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+                  <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                  <span className="text-white text-sm font-medium">{brand}</span>
+                </div>
+              ))}
+            </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
               Endüstriyel Kaya Delme Ekipmanlarında <span className="text-primary">Güvenilir Çözüm Ortağınız</span>
