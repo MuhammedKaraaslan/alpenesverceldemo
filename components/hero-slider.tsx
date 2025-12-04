@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
 import { WhatsAppIcon } from "./icons"
+import { useLanguage } from "@/lib/language-context"
 
 const slides = [
   {
@@ -42,6 +43,7 @@ const slides = [
 
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const { t } = useLanguage()
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -87,11 +89,11 @@ export function HeroSlider() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
-              Endüstriyel Kaya Delme Ekipmanlarında <span className="text-primary">Güvenilir Çözüm Ortağınız</span>
+              {t.hero.headline} <span className="text-primary">{t.hero.headlineHighlight}</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              Atlas Copco, Epiroc ve Sandvik ürün gruplarında hızlı tedarik, geniş stok ve uzman destek.
+              {t.hero.description}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -105,7 +107,7 @@ export function HeroSlider() {
                   className="border-green-600 text-green-500 hover:bg-green-600 hover:text-white px-8 bg-transparent"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
-                  {siteConfig.buttons.getQuote}
+                  {t.buttons.getQuote}
                 </Button>
               </Link>
             </div>

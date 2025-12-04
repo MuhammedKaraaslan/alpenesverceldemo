@@ -1,8 +1,20 @@
+"use client"
+
 import Link from "next/link"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
+import { useLanguage } from "@/lib/language-context"
 
 export function Footer() {
+  const { t } = useLanguage()
+
+  const navItems = [
+    { label: t.navItems.home, href: "/" },
+    { label: t.navItems.products, href: "#urunler" },
+    { label: t.navItems.about, href: "#hakkimizda" },
+    { label: t.navItems.contact, href: "#iletisim" },
+  ]
+
   return (
     <footer className="bg-secondary/50 border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -17,18 +29,18 @@ export function Footer() {
                   className="object-contain w-full h-full"
                 />
               </div>
-              <span className="text-xl font-bold text-foreground">{siteConfig.name}</span>
+              <span className="text-xl font-bold text-foreground">{t.name}</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              {siteConfig.description}
+              {t.description}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Hızlı Linkler</h4>
+            <h4 className="text-foreground font-semibold mb-4">{t.footer.quickLinks}</h4>
             <ul className="space-y-2">
-              {siteConfig.navItems.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {item.label}
@@ -40,26 +52,26 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Ürünler</h4>
+            <h4 className="text-foreground font-semibold mb-4">{t.footer.products}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Kaya Delme Makineleri
+                  {t.footer.productItems.rockDrilling}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Patlatma Ekipmanları
+                  {t.footer.productItems.blasting}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Yedek Parçalar
+                  {t.footer.productItems.spareParts}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Teknik Servis
+                  {t.footer.productItems.technicalService}
                 </Link>
               </li>
             </ul>
@@ -67,7 +79,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">İletişim</h4>
+            <h4 className="text-foreground font-semibold mb-4">{t.footer.contact}</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
@@ -91,13 +103,13 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">© 2025 {siteConfig.name}. Tüm hakları saklıdır.</p>
+          <p className="text-muted-foreground text-sm">© 2025 {t.name}. {t.footer.copyright}</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              Gizlilik Politikası
+              {t.footer.privacyPolicy}
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              Kullanım Koşulları
+              {t.footer.termsOfUse}
             </Link>
           </div>
         </div>

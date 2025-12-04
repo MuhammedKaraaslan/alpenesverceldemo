@@ -7,6 +7,7 @@ import "./globals.css"
 import { Toaster } from "@/components/ui/sonner"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/lib/language-context"
 
 const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -28,10 +29,12 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
       <body className={`font-sans antialiased`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {children}
-          <Toaster />
-          <Analytics />
-          <WhatsAppButton />
+          <LanguageProvider>
+            {children}
+            <Toaster />
+            <Analytics />
+            <WhatsAppButton />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

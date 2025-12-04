@@ -5,29 +5,31 @@ import { Truck, Users, Package, Headphones, ChevronDown, ChevronUp } from "lucid
 import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/lib/language-context"
 
-
-const features = [
-  {
-    icon: Truck,
-    text: "Saha uyumlu hızlı tedarik ve zamanında teslimat",
-  },
-  {
-    icon: Users,
-    text: "Uzman teknik ekip",
-  },
-  {
-    icon: Package,
-    text: "Geniş stok yönetimi",
-  },
-  {
-    icon: Headphones,
-    text: "Yerinde destek hizmetleri",
-  },
-]
 
 export function AboutSection() {
   const [isExpanded, setIsExpanded] = useState(false)
+  const { t } = useLanguage()
+
+  const features = [
+    {
+      icon: Truck,
+      text: t.about.features[0],
+    },
+    {
+      icon: Users,
+      text: t.about.features[1],
+    },
+    {
+      icon: Package,
+      text: t.about.features[2],
+    },
+    {
+      icon: Headphones,
+      text: t.about.features[3],
+    },
+  ]
 
   return (
     <section id="hakkimizda" className="py-20 lg:py-32">
@@ -41,8 +43,8 @@ export function AboutSection() {
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-6 right-0 sm:-right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-xl z-10">
-                <div className="text-4xl font-bold">7/24</div>
-                <div className="text-sm opacity-90">Destek Hizmeti</div>
+                <div className="text-4xl font-bold">{t.about.supportBadgeTitle}</div>
+                <div className="text-sm opacity-90">{t.about.supportBadgeSubtitle}</div>
               </div>
             </div>
 
@@ -64,22 +66,22 @@ export function AboutSection() {
 
           {/* Content Side */}
           <div>
-            <span className="text-primary text-sm font-semibold tracking-wider uppercase">Hakkımızda</span>
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase">{t.about.sectionLabel}</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-              Sektörün Önde Gelen Markalarına <span className="text-primary">7/24 Destek</span>
+              {t.about.sectionTitle} <span className="text-primary">{t.about.sectionTitleHighlight}</span>
             </h2>
 
             <div className={cn("space-y-8 relative", !isExpanded && "line-clamp-3 sm:line-clamp-none overflow-hidden")}>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                AlpEnes, 25 yılı aşkın sektör deneyimi ve geniş ürün yelpazesiyle; kaya delme ekipmanları, hidrolik kırıcılar, hidrolik pompalar, motorlar ve çeşitli endüstriyel elektrik aksamları için güvenilir çözümler sunan bir tedarik firmasıdır.
+                {t.about.paragraph1}
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                <span className="font-bold">Atlas Copco, Epiroc ve Sandvik</span> ürün gruplarında uzmanlaşan firmamız, müşterilerine 7/24 teknik destek, hızlı tedarik ve stok yönetimi avantajı sağlamaktadır.
+                {t.about.paragraph2}
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Saha uyumlu çözümler, uzman kadro ve müşteri odaklı çalışma prensiplerimiz ile Türkiye’nin birçok bölgesindeki işletmelere kaliteli hizmet sunmaya devam ediyoruz.
+                {t.about.paragraph3}
               </p>
             </div>
 
@@ -89,12 +91,12 @@ export function AboutSection() {
             >
               {isExpanded ? (
                 <>
-                  Daha az göster
+                  {t.about.showLess}
                   <ChevronUp className="w-4 h-4" />
                 </>
               ) : (
                 <>
-                  Daha fazla göster
+                  {t.about.showMore}
                   <ChevronDown className="w-4 h-4" />
                 </>
               )}

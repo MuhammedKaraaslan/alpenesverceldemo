@@ -7,9 +7,11 @@ import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
 import { sendEmail } from "@/actions/send-email"
 import { toast } from "sonner"
+import { useLanguage } from "@/lib/language-context"
 
 export function ContactSection() {
   const [loading, setLoading] = useState(false)
+  const { t } = useLanguage()
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -33,13 +35,12 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Info */}
           <div>
-            <span className="text-primary text-sm font-semibold tracking-wider uppercase">İletişim</span>
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase">{t.contact.sectionLabel}</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-              Hızlı İletişim
+              {t.contact.sectionTitle}
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Sorularınız ve talepleriniz için bizimle iletişime geçin. Uzman ekibimiz size en kısa sürede dönüş
-              yapacaktır.
+              {t.contact.description}
             </p>
 
             {/* Contact Cards */}
@@ -52,7 +53,7 @@ export function ContactSection() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-sm">Telefon</div>
+                  <div className="text-muted-foreground text-sm">{t.contact.phone}</div>
                   <div className="text-foreground font-semibold">{siteConfig.contact.phone}</div>
                 </div>
               </a>
@@ -80,7 +81,7 @@ export function ContactSection() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-sm">E-posta</div>
+                  <div className="text-muted-foreground text-sm">{t.contact.email}</div>
                   <div className="text-foreground font-semibold">{siteConfig.contact.email}</div>
                 </div>
               </a>
@@ -91,7 +92,7 @@ export function ContactSection() {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-muted-foreground text-sm">Adres</div>
+                    <div className="text-muted-foreground text-sm">{t.contact.address}</div>
                     <div className="text-foreground font-semibold">{address}</div>
                   </div>
                 </div>
@@ -101,61 +102,61 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="bg-card border border-border rounded-2xl p-6 lg:p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-6">{siteConfig.buttons.requestQuote}</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">{t.contact.formTitle}</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">Ad Soyad</label>
+                  <label className="text-sm text-muted-foreground mb-2 block">{t.contact.form.name}</label>
                   <input
                     type="text"
                     name="name"
                     required
                     className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="Adınız Soyadınız"
+                    placeholder={t.contact.form.namePlaceholder}
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">Telefon</label>
+                  <label className="text-sm text-muted-foreground mb-2 block">{t.contact.form.phone}</label>
                   <input
                     type="tel"
                     name="phone"
                     required
                     className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="+90 5XX XXX XX XX"
+                    placeholder={t.contact.form.phonePlaceholder}
                   />
                 </div>
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">E-posta</label>
+                <label className="text-sm text-muted-foreground mb-2 block">{t.contact.form.email}</label>
                 <input
                   type="email"
                   name="email"
                   required
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                  placeholder="ornek@email.com"
+                  placeholder={t.contact.form.emailPlaceholder}
                 />
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Konu</label>
+                <label className="text-sm text-muted-foreground mb-2 block">{t.contact.form.subject}</label>
                 <select
                   name="subject"
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
                 >
-                  <option value="">Seçiniz</option>
-                  <option value="kaya-delme">Kaya Delme Makineleri</option>
-                  <option value="patlatma">Patlatma Ekipmanları</option>
-                  <option value="yedek-parca">Yedek Parçalar</option>
-                  <option value="diger">Diğer</option>
+                  <option value="">{t.contact.form.subjectPlaceholder}</option>
+                  <option value="kaya-delme">{t.contact.form.subjectOptions.rockDrilling}</option>
+                  <option value="patlatma">{t.contact.form.subjectOptions.blasting}</option>
+                  <option value="yedek-parca">{t.contact.form.subjectOptions.spareParts}</option>
+                  <option value="diger">{t.contact.form.subjectOptions.other}</option>
                 </select>
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Mesajınız</label>
+                <label className="text-sm text-muted-foreground mb-2 block">{t.contact.form.message}</label>
                 <textarea
                   name="message"
                   required
                   rows={4}
                   className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none"
-                  placeholder="Talebinizi detaylı olarak yazınız..."
+                  placeholder={t.contact.form.messagePlaceholder}
                 />
               </div>
               <Button
@@ -163,12 +164,10 @@ export function ContactSection() {
                 disabled={loading}
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 cursor-pointer"
               >
-                {loading ? "Gönderiliyor..." : siteConfig.buttons.requestQuote}
+                {loading ? t.buttons.sending : t.contact.form.submit}
               </Button>
               <p className="text-xs text-muted-foreground/70 mt-3 leading-relaxed">
-                Formu göndererek kişisel verilerinizin işlenmesini kabul etmiş olursunuz.
-                Bilgileriniz yalnızca talebinize yanıt vermek amacıyla kullanılacak ve üçüncü
-                şahıslarla paylaşılmayacaktır.
+                {t.contact.form.privacyNote}
               </p>
             </form>
           </div>

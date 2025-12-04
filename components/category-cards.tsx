@@ -1,43 +1,38 @@
+"use client"
+
 import { ArrowRight, Drill, Bomb, Cog } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
-const categories = [
-  {
-    id: 1,
-    title: "Kaya Delme Makineleri",
-    description: "Kaya delme ve yer altı madenciliği için yüksek performanslı ekipmanlar.",
-    icon: Drill,
-    image: "/kaya-delme.jpg",
-    buttonText: "İletişime Geç",
-  },
-  {
-    id: 2,
-    title: "Patlatma Ekipmanları",
-    description: "Saha uyumlu, sertifikalı ve güvenli patlatma ekipmanları.",
-    icon: Bomb,
-    image: "/mining-blasting-equipment-industrial-explosive-too.jpg",
-    buttonText: "İletişime Geç",
-  },
-  {
-    id: 3,
-    title: "Yedek Parçalar",
-    description: "10.000'den fazla stoklu ürün seçeneği ile hızlı çözümler.",
-    icon: Cog,
-    image: "/yedek-parca.jpg",
-    buttonText: "İletişime Geç",
-  },
-]
+import { useLanguage } from "@/lib/language-context"
 
 export function CategoryCards() {
+  const { t } = useLanguage()
+
+  const categories = [
+    {
+      id: 1,
+      icon: Drill,
+      image: "/kaya-delme.jpg",
+    },
+    {
+      id: 2,
+      icon: Bomb,
+      image: "/mining-blasting-equipment-industrial-explosive-too.jpg",
+    },
+    {
+      id: 3,
+      icon: Cog,
+      image: "/yedek-parca.jpg",
+    },
+  ]
   return (
     <section id="urunler" className="py-20 lg:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-primary text-sm font-semibold tracking-wider uppercase">Ürün Kategorileri</span>
+          <span className="text-primary text-sm font-semibold tracking-wider uppercase">{t.categories.sectionLabel}</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 text-balance">
-            İhtiyacınıza Uygun Çözümler
+            {t.categories.sectionTitle}
           </h2>
         </div>
 
@@ -69,11 +64,11 @@ export function CategoryCards() {
                       <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-xl flex items-center justify-center shrink-0">
                         <category.icon className="w-6 h-6 text-primary" />
                       </div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-foreground">{category.title}</h3>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-foreground">{t.categories.items[index].title}</h3>
                     </div>
 
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      {category.description}
+                      {t.categories.items[index].description}
                     </p>
 
                     <div className="pt-4">
@@ -82,7 +77,7 @@ export function CategoryCards() {
                           variant="outline"
                           className="h-12 px-8 border-primary/20 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all group/btn text-base cursor-pointer"
                         >
-                          {category.buttonText}
+                          {t.categories.items[index].buttonText}
                           <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                         </Button>
                       </Link>
